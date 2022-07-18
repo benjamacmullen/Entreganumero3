@@ -1,0 +1,5 @@
+@mixin propiedades ($ancho,$altura) {
+    height: $altura;
+    width: $ancho;
+    
+}

@@ -26,8 +26,7 @@
 }
 
 .logo {
-    width: 10%;
-    height: 10%;
+    @include propiedades(10%,10% );
     animation-name: aparecer;
     animation-duration: 3s;
 }
@@ -61,6 +60,11 @@
 .boton:hover{
     background-color: grey;
 }
+.boton{
+    padding: map-get($boton , padding );
+    border: map-get($boton , border );
+    border-radius: map-get($boton , radio )
+}
 
 .nav {
     width: 100%;
@@ -73,25 +77,28 @@
     display: flex;
     justify-content: center;
     grid-area: nav;
+    .nav ul {
+        list-style: none;
+        padding-left: 3px;
+        .nav ul li {
+            display: inline-block;
+            margin-top: 10px;
+            position: relative;
+            .nav ul li ul {
+                display: none;
+            }
+            
+        }
+    
+    }
+    
    
 }
 
 
-.nav ul {
-    list-style: none;
-    padding-left: 3px;
 
-}
 
-.nav ul li {
-    display: inline-block;
-    margin-top: 10px;
-    position: relative;
-}
 
-.nav ul li ul {
-    display: none;
-}
 
 .nav ul li:hover ul {
     display: block;
@@ -110,8 +117,7 @@
 .destacadosPrimeraLinea {
     margin: 2px;
     text-align: center;
-    width: 100px;
-    height: 100px;
+    @include propiedades(100px,100px );
     padding: 5px 5px;
     background-color: $ColorSecundario;
     transition: all 1s;
@@ -123,16 +129,11 @@
 }
 
 .destacadosSegundaLinea {
-    margin: 2px;
-    text-align: center;
-    width: 100px;
-    height: 100px;
-    padding: 5px 5px;
-    background-color: $ColorSecundario;
-    transition: all 1s;
+    @extend .destacadosPrimeraLinea;
+   
 }
 .destacadosSegundaLinea:hover{
-    transform: translate(50px,20px) scale(1.5)
+    @extend .destacadosPrimeraLinea:hover
 }
 
 

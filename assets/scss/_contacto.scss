@@ -2,7 +2,7 @@
 /*/ Contacto /*/
 .Field {
     width: 100%;
-    height: 100px;
+    height: ($ancho/4)-150px;
 }
 
 .containerCont {
@@ -11,8 +11,8 @@
 }
 
 .imgUbi {
-    width: 800PX;
-    height: 600px;
+    width: $ancho-200px;
+    height: ($ancho/2)+100px;
 }
 
 .ubiH {
