@@ -1,4 +1,9 @@
 /*/ index*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: none; }
+
 .divLogo {
   text-align: center; }
 
@@ -46,7 +51,11 @@
 
 .nav ul {
   list-style: none;
-  padding-left: 3px; }
+  padding-left: 3px;
+  display: flex;
+  width: 40%;
+  justify-content: space-around;
+  align-items: center; }
 
 .nav ul li {
   display: inline-block;
@@ -106,53 +115,63 @@
   height: 25px; }
 
 /*/ Productos /*/
+.mainProductos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; }
+
 .containerProductos {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
-  width: 100vw;
-  
- }
-.containerProductos img{
-  width: 200px;
-  height: 200px;
-}
-.containerProductos div{
+  width: 100%;
+  position: relative;
+  gap: 10px;
+  justify-content: center; }
+
+.containerProductos img {
+  width: 100%;
+  object-fit: contain;
+  height: 300px;
+  border-radius: 10px 10px 0 0; }
+
+.containerProductos div {
+  display: flex;
   flex-direction: column;
-  width: 33%;
-  margin-top: 30px;
-  
-  
-}
-
-.cardPro {
-  width: 150px;
-  height: 250px;
-  margin: 20px;
-  padding: 10px;
-  border-radius: 15px 15px 0 0; }
-  
-
-.cardimgPro {
-  height: 150px;
-  width: 150px; }
-
-.cardimgPro1 {
-  height: 150px;
-  width: 150px; }
-
-.cardp {
-  text-align: center; }
+  justify-content: center;
+  align-items: center;
+  min-width: 250px;
+  margin-top: 10px;
+  background-color: grey;
+  border-radius: 10px; }
 
 /*/ Contacto /*/
+.formContainer {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center; }
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 10px;
+  gap: 10px; }
+
 .Field {
   width: 100%;
   height: 100px; }
 
 .containerCont {
-  display: inline-block;
-  justify-content: center; }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; }
 
 .imgUbi {
   width: 800PX;
@@ -164,45 +183,36 @@
   margin: 5px; }
 
 /*/ Videos /*/
+.mainVid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; }
+
 .containerVid {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  position: relative;
+  gap: 10px;
   justify-content: center; }
 
-.cardVid {
-  width: 200px;
-  height: 250px;
-  margin: 20px;
-  border-radius: 15px 15px 0 0; }
+.containerVid iframe {
+  width: 100%;
+  object-fit: contain;
+  height: 300px;
+  border-radius: 10px 10px 0 0; }
 
-.cardVidVid {
-  height: 200px;
-  width: 200px; }
-
-.cardVid1 {
-  height: 200px;
-  width: 200px; }
-
-.vidP {
-  text-align: center; }
-
-.containerGrande {
+.containerVid div {
   display: flex;
-  justify-content: center; }
-
-.cardGrande {
-  width: 500px;
-  height: 500px; }
-
-.cardGrandeGrande {
-  height: 500px;
-  width: 500px; }
-
-.cardGrande1 {
-  height: 500px;
-  width: 500px; }
-
-.GrandeH {
-  text-align: center; }
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 250px;
+  margin-top: 10px;
+  background-color: grey;
+  border-radius: 10px; }
 
 /*/mediaIndex/*/
 @media (max-width: 567px) {
@@ -331,4 +341,3 @@
   .logubi {
     width: 10px;
     height: 10px; } }
-  

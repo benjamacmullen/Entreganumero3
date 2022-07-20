@@ -1,38 +1,37 @@
 
 
 /*/ Productos /*/
-
+.mainProductos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; 
+}
 .containerProductos {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    width: 100%;
+    position: relative;
+    gap: 10px;
     justify-content: center;
-    width: 100vw;
-}
+  }
 
-.cardPro {
-    width: 150px;
-    height: 250px;
-    margin: 20px;
-    padding: 10px;
-    border-radius: 15px 15px 0 0;
+.containerProductos img{ 
+    width: 100%;
+    object-fit: contain;
+    height: 300px;
+    border-radius: 10px 10px 0 0;
+  }
 
-}
-
-.cardimgPro {
-    height: 150px;
-    width: 150px;
-
-}
-
-.cardimgPro1 {
-    height: 150px;
-    width: 150px;
-}
-
-.cardp {
-    text-align: center;
-}
-.img-fluid{
-background-color: $ColorPrimario;
-}
+.containerProductos div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 250px;
+    margin-top: 10px;
+    background-color:grey;
+    border-radius: 10px;
+  }
+  
