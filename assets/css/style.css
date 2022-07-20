@@ -108,7 +108,23 @@
 /*/ Productos /*/
 .containerProductos {
   display: flex;
-  justify-content: center; }
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100vw;
+  
+ }
+.containerProductos img{
+  width: 200px;
+  height: 200px;
+}
+.containerProductos div{
+  flex-direction: column;
+  width: 33%;
+  margin-top: 30px;
+  
+  
+}
 
 .cardPro {
   width: 150px;
@@ -116,6 +132,7 @@
   margin: 20px;
   padding: 10px;
   border-radius: 15px 15px 0 0; }
+  
 
 .cardimgPro {
   height: 150px;
