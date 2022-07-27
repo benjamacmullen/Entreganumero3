@@ -1,0 +1,40 @@
+/*//*team/*/
+.DivTeam{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+  }
+  .containerTeam {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+      position: relative;
+      gap: 10px;
+      justify-content: space-around;
+      text-align: center;
+      padding: 20px;
+    }
+  
+  .containerTeam img{ 
+      width: 100%;
+      object-fit: contain;
+      height: 300px;
+      border-radius: 10px 10px 0 0;
+    }
+  
+  .containerTeam div{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-width: 250px;
+      margin-top: 10px;
+      background-color:grey;
+      border-radius: 10px;
+    }
+.teamH{
+    width: 100%;
+    padding: 30px;
+}

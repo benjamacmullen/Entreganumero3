@@ -3,18 +3,21 @@
 /*/ Videos /*/
 .mainVid{
     display: flex;
+    flex-direction:column;
     justify-content: center;
     align-items: center;
     width: 100%; 
+    gap: 15px;
   }
   .containerVid {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      width: 100%;
+      width: 80%;
       position: relative;
-      gap: 10px;
+      gap: 30px;
       justify-content: center;
+      padding: 15px;
     }
   
   .containerVid iframe{ 
@@ -34,3 +37,21 @@
       background-color:grey;
       border-radius: 10px;
     }
+  .containerGrande{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 100%;
+      position: relative;
+      gap: 10px;
+      justify-content: center;
+  }
+  .containerGrande iframe{
+    width: 100%;
+    object-fit: contain;
+    height: 300px;
+    border-radius: 10px 10px 10px 10px;
+  }
+  .containerGrande div{
+    text-align: center;
+  }

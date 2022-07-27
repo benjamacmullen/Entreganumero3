@@ -185,18 +185,21 @@
 /*/ Videos /*/
 .mainVid {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%; }
+  width: 100%;
+  gap: 15px; }
 
 .containerVid {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 100%;
+  width: 80%;
   position: relative;
-  gap: 10px;
-  justify-content: center; }
+  gap: 30px;
+  justify-content: center;
+  padding: 15px; }
 
 .containerVid iframe {
   width: 100%;
@@ -213,6 +216,24 @@
   margin-top: 10px;
   background-color: grey;
   border-radius: 10px; }
+
+.containerGrande {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  position: relative;
+  gap: 10px;
+  justify-content: center; }
+
+.containerGrande iframe {
+  width: 100%;
+  object-fit: contain;
+  height: 300px;
+  border-radius: 10px 10px 10px 10px; }
+
+.containerGrande div {
+  text-align: center; }
 
 /*/mediaIndex/*/
 @media (max-width: 567px) {
@@ -341,3 +362,41 @@
   .logubi {
     width: 10px;
     height: 10px; } }
+
+/*//*team/*/
+.DivTeam {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; }
+
+.containerTeam {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  position: relative;
+  gap: 10px;
+  justify-content: space-around;
+  text-align: center;
+  padding: 20px; }
+
+.containerTeam img {
+  width: 100%;
+  object-fit: contain;
+  height: 300px;
+  border-radius: 10px 10px 0 0; }
+
+.containerTeam div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 250px;
+  margin-top: 10px;
+  background-color: grey;
+  border-radius: 10px; }
+
+.teamH {
+  width: 100%;
+  padding: 30px; }
