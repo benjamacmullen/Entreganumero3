@@ -90,27 +90,56 @@
 
 }
 
-
-
-
-
-.destacadosPrimeraLinea {
-    background-color: $ColorSecundario;
-    transition: all 1s;
-
-
-}
-.destacadosPrimeraLinea:hover{
-    transform: translate(50px,20px) scale(1.5)
-}
-
-.destacadosSegundaLinea {
-    background-color: $ColorSecundario;
-    transition: all 1s;
-}
-.destacadosSegundaLinea:hover{
-    transform: translate(50px,20px) scale(1.5)
-}
+.mainIndex{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    gap: 15px;
+  }
+  .containerIndex {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 80%;
+      position: relative;
+      gap: 30px;
+      justify-content: center;
+      padding: 15px;
+    }
+  
+  .containerIndex img{ 
+      width: 100%;
+      object-fit: contain;
+      height: 300px;
+      border-radius: 10px 10px 0 0;
+    }
+  
+  .containerIndex div{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-width: 250px;
+      margin-top: 10px;
+      background-color:grey;
+      border-radius: 10px;
+    }
+  .carrusel{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 100%;
+      position: relative;
+      gap: 10px;
+      justify-content: center;
+  }
+  .indexH{
+    width: 100%;
+    text-align: center;
+  }
+    
 
 
 

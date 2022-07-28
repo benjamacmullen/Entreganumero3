@@ -70,19 +70,52 @@
   position: absolute;
   background-color: rgba(0, 0, 0, 0.108); }
 
-.destacadosPrimeraLinea {
-  background-color: rgba(0, 0, 0, 0.34);
-  transition: all 1s; }
+.mainIndex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 15px; }
 
-.destacadosPrimeraLinea:hover {
-  transform: translate(50px, 20px) scale(1.5); }
+.containerIndex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  position: relative;
+  gap: 30px;
+  justify-content: center;
+  padding: 15px; }
 
-.destacadosSegundaLinea {
-  background-color: rgba(0, 0, 0, 0.34);
-  transition: all 1s; }
+.containerIndex img {
+  width: 100%;
+  object-fit: contain;
+  height: 300px;
+  border-radius: 10px 10px 0 0; }
 
-.destacadosSegundaLinea:hover {
-  transform: translate(50px, 20px) scale(1.5); }
+.containerIndex div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 250px;
+  margin-top: 10px;
+  background-color: grey;
+  border-radius: 10px; }
+
+.carrusel {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  position: relative;
+  gap: 10px;
+  justify-content: center; }
+
+.indexH {
+  width: 100%;
+  text-align: center; }
 
 /* Tipos de tipografia usados en la web*/
 .tipografiaMacWeb {
