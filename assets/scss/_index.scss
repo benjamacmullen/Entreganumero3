@@ -47,7 +47,15 @@
 .boton:hover{
     background-color: rgba(128, 128, 128, 0.923);
 }
-
+.btnAgregar{
+    border: 0;
+    border-radius: 3px;
+    padding: 5px;
+    margin: 10px;
+  }  
+  .btnAgregar:hover{
+    background-color: rgba(0, 81, 255, 0.323);
+  }
 .nav {
     width: 100%;
     margin: 0;

@@ -14,7 +14,7 @@
   animation-duration: 3s; }
 
 .divbotonC {
-  background-color: rgba(0, 0, 0, 0.108); }
+  background-color: #cc9c64; }
 
 @keyframes aparecer {
   0% {
@@ -25,7 +25,7 @@
 .divboton {
   text-align: right;
   margin: 10px;
-  background-color: rgba(0, 0, 0, 0.108); }
+  background-color: #cc9c64; }
 
 .divbotonC {
   text-align: right; }
@@ -37,11 +37,20 @@
 .boton:hover {
   background-color: rgba(128, 128, 128, 0.923); }
 
+.btnAgregar {
+  border: 0;
+  border-radius: 3px;
+  padding: 5px;
+  margin: 10px; }
+
+.btnAgregar:hover {
+  background-color: rgba(0, 81, 255, 0.323); }
+
 .nav {
   width: 100%;
   margin: 0;
   height: 80px;
-  background-color: rgba(0, 0, 0, 0.108);
+  background-color: #cc9c64;
   position: sticky;
   top: 0;
   z-index: 20;
@@ -68,7 +77,7 @@
 .nav ul li:hover ul {
   display: block;
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.108); }
+  background-color: #cc9c64; }
 
 .mainIndex {
   display: flex;
@@ -125,7 +134,7 @@
 /* footer */
 .foo {
   margin: 60px;
-  background-color: rgba(0, 0, 0, 0.056); }
+  background-color: #e4dccc; }
 
 .loginsta {
   width: 50px;
@@ -178,6 +187,18 @@
   margin-top: 10px;
   background-color: grey;
   border-radius: 10px; }
+
+.btnAgregar {
+  border: 0;
+  border-radius: 3px;
+  padding: 5px;
+  margin: 10px; }
+
+.btnAgregar:hover {
+  background-color: rgba(0, 81, 255, 0.323); }
+
+.precio {
+  font-size: 30px; }
 
 /*/ Contacto /*/
 .formContainer {

@@ -34,4 +34,15 @@
     background-color:grey;
     border-radius: 10px;
   }
-  
+.btnAgregar{
+  border: 0;
+  border-radius: 3px;
+  padding: 5px;
+  margin: 10px;
+}  
+.btnAgregar:hover{
+  background-color: rgba(0, 81, 255, 0.323);
+}
+.precio{
+  font-size: 30px;
+}
